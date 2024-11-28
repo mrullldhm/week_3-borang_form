@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details Registration</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+</head>
+
+<body>
+    <section id="main" aria-labelledby="main-title"> <!-- Main section for the registration form with ARIA label -->
+        <h1 class="registration" id="main-title">Personal Details</h1> <!-- Main heading for the form -->
+        
+        <form class="registration" action="#" method="POST" aria-label="Personal details registration form"> <!-- Form for user registration with ARIA label -->
+            <!-- Name field -->
+            <label for="name">Name:</label> <!-- Label for the name input -->
+            <input type="text" id="name" name="name" placeholder="Abu Bin Ali" required aria-required="true"> <!-- Input for name -->
+            <br><br>
+
+            <!-- Email field -->
+            <label for="email">Email:</label> <!-- Label for the email input -->
+            <input type="email" id="email" name="email" placeholder="user@email.com" required aria-required="true"> <!-- Input for email -->
+            <br><br>
+
+            <!-- Phone field -->
+            <label for="phone">Phone:</label> <!-- Label for the phone input -->
+            <input type="tel" id="phone" name="phone" pattern="\+601\d{8}" placeholder="+60132943132" required aria-required="true" aria-describedby="phoneHelp"> <!-- Input for phone number with pattern validation -->
+            <br><br>
+
+            <!-- Birthday field -->
+            <label for="birthday">Birthday:</label> <!-- Label for the birthday input -->
+            <input type="date" id="birthday" name="birthday" required aria-required="true"> <!-- Input for date of birth -->
+            <br><br>
+
+            <!-- Gender field -->
+                <legend id="gender-title">Gender:</legend> <!-- Legend for gender options -->
+
+                <input type="radio" id="male" name="gender" value="male" required aria-required="true"> <!-- Radio button for male -->
+                <label for="male">Male</label><br> <!-- Label for male radio button -->
+
+                <input type="radio" id="female" name="gender" value="female"> <!-- Radio button for female -->
+                <label for="female">Female</label><br><br> <!-- Label for female radio button -->
+
+            <!-- Sport field -->
+                <legend id="sports-title">Select your sport:</legend> <!-- Legend for sports options -->
+
+                <input type="checkbox" id="futsal" name="sports" value="futsal"> <!-- Checkbox for Futsal -->
+                <label for="futsal">Futsal</label><br> <!-- Label for Futsal checkbox -->
+                
+                <input type="checkbox" id="badminton" name="sports" value="badminton"> <!-- Checkbox for Badminton -->
+                <label for="badminton">Badminton</label><br> <!-- Label for Badminton checkbox -->
+                
+                <input type="checkbox" id="running" name="sports" value="running"> <!-- Checkbox for Running -->
+                <label for="running">Running</label><br> <!-- Label for Running checkbox -->
+                
+                <input type="checkbox" id="swimming" name="sports" value="swimming"> <!-- Checkbox for Swimming -->
+                <label for="swimming">Swimming</label><br><br> <!-- Label for Swimming checkbox -->
+
+            <!-- Submit button -->
+            <button type="submit">Register</button> <!-- Button to submit the form -->
+        </form>
+    </section>
+
+    <footer> <!-- Footer section -->
+        <p>Phone: +60 13-294 3132 | Email: mrullldhm94@gmail.com</p> <!-- Contact information -->
+        <p>&copy; 2024 Amirul Adham. All rights reserved.</p> <!-- Copyright notice -->
+    </footer>
+</body>
+
+</html>
